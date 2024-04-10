@@ -55,6 +55,37 @@ object bruno{
 }
 
 object ramiro{
-	var contractura =
+	var contractura = 0
+	var pielGrasosa = false 	
 	
-}
+	method recibeMasajes() {
+		contractura = 0.max(contractura - 2) 
+	}
+	
+	method seDaUnBanio(){
+		pielGrasosa = false 
+		
+	}
+	
+	method comeUnaBigMac(){
+		pielGrasosa = true 	
+		
+	}                                                   
+	
+	method bajarALaFosa(){
+		pielGrasosa = true
+		contractura += 1
+		
+	}
+	
+	method jugarAlRemo(){
+		contractura += 3 	
+		
+	}
+	
+	method diaDeTrabajo() {
+		self.bajarALaFosa()
+		self.comeUnaBigMac()
+		self.bajarALaFosa()
+		
+	} 
