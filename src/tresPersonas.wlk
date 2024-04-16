@@ -45,7 +45,7 @@ object bruno{
 	method veElNoticiero(){
 		esFeliz = false
 	}
-	method estaPefecto() = esFeliz == true and tieneSed == false and peso.between(50000, 70000)
+	method estaPefecto() = esFeliz and not tieneSed and peso.between(50000, 70000)
 	
 	method medioDiaEnCasa() {
 		self.comeFideos() 
@@ -89,11 +89,4 @@ object ramiro{
 		self.bajarALaFosa()
 		
 	}
-object spa {
-	
-	method atender(persona){
-		persona.seDaUnBanio()
-		persona.recibeMasajes()
-	}
-	
 }
