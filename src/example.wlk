@@ -88,4 +88,12 @@ object ramiro{
 		self.comeUnaBigMac()
 		self.bajarALaFosa()
 		
-	} 
+	}
+object spa {
+	
+	method atender(persona){
+		persona.seDaUnBanio()
+		persona.recibeMasajes()
+	}
+	
+}
